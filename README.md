@@ -3,14 +3,18 @@
 ## Description:
 This repo details an example of how to integrate run:ai with mlflow.   
 It consists of 3 basic steps:
-1. create a persistent directory (called 'mlflow' in our example) on the NFS to hold the mlflow database and artifact folder.
+1. create a persistent directory on the NFS 
+    + called 'mlflow' in our example
+    + to hold the mlflow database and artifact folder.
 2. create a docker image with mlflow and jupyter-server-proxy installed
     + jupyter-server-proxy is used to access the mlflow UI
 3. run python scripts by submitting jobs to the scheduler, using the created docker image.  
 
 The created docker image used is public and can be found here:  
 [jonathancosme/mlflow-ui](https://hub.docker.com/repository/docker/jonathancosme/mlflow-ui)  
-The source for the docker image can be found [here](/mlflow-ui).  
+The source for the docker image can be found here: [/mlflow-ui](/mlflow-ui).  
+  
+Example notebook and python scripts can be found here: [/mlflow_demo](/mlflow_demo).  
 
 ## mlflow intro 
 
