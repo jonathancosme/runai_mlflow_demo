@@ -27,26 +27,26 @@ Two things are needed for mlflow:
 ### how does mlflow work?
 #### 1. First we start the server with a CLI command
 running either of these commands will automatically create a databse in the local directory, if one doesn’t exist.  
-'''bash
+~~~bash
 mlflow ui
-'''  
-'''bash
+~~~  
+~~~bash
 mlflow server
-'''  
+~~~  
 we can also choose to specify the location of the database, and artifact folder, as well as the host IP, and port.  
-'''bash
+~~~bash
 mlflow server \
     --backend-store-uri=sqlite:///abs/path/to/db/mlflow.db \
      --default-artifact-root=/abs/path/to/artifacts \
      --host=0.0.0.0 \
      --port=5000 
-'''  
+~~~  
 #### 2. call mlflow commands within the python script  
 you’ll want to import mlflow, then set the tracking uri so that mlflow will save everything to the database and artifact folder.  
   
 Then you’ll want to start your run, and at the end, you’ll want to end the run.  
 
-'''python
+~~~python
 import mlflow
 
 mlflow.set_tracking_uri('0.0.0.0:5000')
@@ -57,7 +57,7 @@ your code here
 """
 
 mlflow.end_run()
-'''  
+~~~  
   
 ## mlflow with run:ai
 ### what is needed to run mlflow on run:ai?
@@ -112,7 +112,7 @@ so our CLI command would look like this:
 
 ![](images/image_12.png) 
 
-'''bash
+~~~bash
 runai submit \
     --project testproj \
     --gpu 0 \
@@ -120,7 +120,7 @@ runai submit \
     --image jonathancosme/mlflow-ui \
     --volume /home/jonathan_cosme/jcosme:/home/jovyan/work \
     -- python work/projects/mlflow_demo/mlflow_demo_1.py
-'''  
+~~~  
 
 ### Example job submission
 ![](images/image_13.png) 
