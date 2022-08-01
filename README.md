@@ -1,4 +1,6 @@
-# Using mlflow with run:ai
+# Using mlflow with run:ai  
+  
+**A 10-minute video of a live demo can be found [here](https://vimeo.com/735365104)**
 
 ## Description:
 This repo details an example of how to integrate run:ai with mlflow.   
