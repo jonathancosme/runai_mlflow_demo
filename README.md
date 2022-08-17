@@ -17,6 +17,7 @@ The created docker image used is public and can be found here:
 The source for the docker image can be found here: [/mlflow-ui](/mlflow-ui).  
   
 Example notebook and python scripts can be found here: [/mlflow_demo](/mlflow_demo).  
+The run:ai CLI commands used can be found here: [runai_cli_commands](runai_cli_commands).  
 
 ## mlflow intro 
 
